@@ -1,0 +1,16 @@
+checkpoint/0
+version/1
+fid/3
+chunkId/2
+chunkVersionInc/1
+time/Wed Apr 15 09:46:21 2009
+log/log//log.0
+
+fattr/dir/id/2/chunkcount/0/numReplicas/1/mtime/1239759981/607815/ctime/1239759981/607815/crtime/1239759981/607815
+fattr/dir/id/3/chunkcount/0/numReplicas/1/mtime/1239759981/607846/ctime/1239759981/607846/crtime/1239759981/607846
+dentry/name/dumpster/id/3/parent/2
+dentry/name/../id/2/parent/2
+dentry/name/./id/2/parent/2
+dentry/name///id/2/parent/2
+dentry/name/../id/2/parent/3
+dentry/name/./id/3/parent/3

@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC  -Wall -g  -shared -Wl,-soname,libkfsCommon.so -o libkfsCommon.so CMakeFiles/kfsCommon-shared.dir/properties.o CMakeFiles/kfsCommon-shared.dir/hsieh_hash.o CMakeFiles/kfsCommon-shared.dir/log.o -L/usr/local/lib /usr/local/lib/liblog4cpp.so -lpthread -Wl,-rpath,/usr/local/lib 

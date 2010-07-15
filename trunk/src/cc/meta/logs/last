@@ -1,0 +1,11 @@
+version/1
+time/Thu Apr 16 13:16:20 2009
+chunkVersionInc/1
+chunkVersionInc/1
+mkdir/dir/2/name/home/id/14
+mkdir/dir/14/name/fify/id/15
+create/dir/15/name/test2.txt/id/16/numReplicas/3
+allocate/file/16/offset/0/chunkId/19/chunkVersion/1
+truncate/file/16/offset/0
+allocate/file/16/offset/0/chunkId/19/chunkVersion/1
+time/Wed Dec 30 14:49:58 2009
