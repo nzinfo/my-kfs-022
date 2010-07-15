@@ -1,0 +1,581 @@
+LOOKUP 
+Cseq: 0
+Version: KFS/1.0
+Parent File-handle: 2
+Filename: home
+
+
+Content Length: 0
+LOOKUP 
+Cseq: 1
+Version: KFS/1.0
+Parent File-handle: 4
+Filename: fify
+
+
+Content Length: 0
+LOOKUP 
+Cseq: 2
+Version: KFS/1.0
+Parent File-handle: 5
+Filename: test2.txt
+
+
+Content Length: 0
+File already exist, opening: /home/fify/test2.txt
+LOOKUP 
+Cseq: 3
+Version: KFS/1.0
+Parent File-handle: 5
+Filename: test2.txt
+
+
+Content Length: 0
+GETLAYOUT 
+Cseq: 4
+Version: KFS/1.0
+File-handle: 23
+
+
+Content Length: 0
+SIZE 
+Cseq: 5
+Version: KFS/1.0
+Chunk-handle: 20
+Chunk-version: 8
+
+
+Content Length: 0
+TRUNCATE 
+Cseq: 6
+Version: KFS/1.0
+File-handle: 23
+Offset: 0
+
+
+Content Length: 0
+[31m[1mWriting file..[0m
+ALLOCATE 
+Cseq: 7
+Version: KFS/1.0
+Client-host: fify-desktop
+File-handle: 23
+Chunk-offset: 0
+
+
+Content Length: 0
+SIZE 
+Cseq: 8
+Version: KFS/1.0
+Chunk-handle: 20
+Chunk-version: 8
+
+
+Content Length: 0
+WRITE_ID_ALLOC 
+Cseq: 9
+Version: KFS/1.0
+Chunk-handle: 20
+Chunk-version: 8
+Offset: 0
+Num-bytes: 79
+Num-servers: 3
+Servers:10.61.1.92 10629 10.61.1.92 10628 10.61.1.92 10626 
+
+
+Content Length: 0
+ ### Write ID: 241
+ ### Write ID: 150
+ ### Write ID: 255
+ ### Start to write perpared Ops with write ID: 0
+[34m[1mStart to do pipelining!
+[0m[34m[1mDoPipelinedWrite!
+[0m[34m[1mThere are 1 ops to be done!
+[0m[34m[1mStart to push data to server!
+[0mwrite-prepare: chunkid=20 version=8 offset=0 numBytes=79 location= 10.61.1.92 10629 writeId=241  location= 10.61.1.92 10628 writeId=150  location= 10.61.1.92 10626 writeId=255 
+WRITE_PREPARE 
+Cseq: 10
+Version: KFS/1.0
+Chunk-handle: 20
+Chunk-version: 8
+Offset: 0
+Num-bytes: 79
+Checksum: 2248678404
+Num-servers: 3
+Servers:10.61.1.92 10629 241 10.61.1.92 10628 150 10.61.1.92 10626 255 
+
+
+Content Length: 79
+WRITE_SYNC 
+Cseq: 11
+Version: KFS/1.0
+Chunk-handle: 20
+Chunk-version: 8
+Num-servers: 3
+Servers:10.61.1.92 10629 241 10.61.1.92 10628 150 10.61.1.92 10626 255 
+
+
+Content Length: 0
+ ### Doing pipelined write: 0
+[34m[1mStart to do recycle Prepared Ops!
+[0mNum of bytes wrote: 79
+[33m[1mWrite file done, 79 bytes written.[0m
+[31m[1mReading file..[0m
+LEASE_ACQUIRE 
+Cseq: 12
+Version: KFS/1.0
+Chunk-handle: 20
+
+
+Content Length: 0
+READ 
+Cseq: 13
+Version: KFS/1.0
+Chunk-handle: 20
+Chunk-version: 8
+Offset: 0
+Num-bytes: 79
+
+
+Content Length: 0
+Writing file to kfs from test program: KfsWriteAfterRead
+Write for the 1 time.
+
+[33m[1mRead file done, 79 bytes read.[0m
+[31m[1mWriting file..[0m
+WRITE_ID_ALLOC 
+Cseq: 14
+Version: KFS/1.0
+Chunk-handle: 20
+Chunk-version: 8
+Offset: 79
+Num-bytes: 79
+Num-servers: 3
+Servers:10.61.1.92 10629 10.61.1.92 10628 10.61.1.92 10626 
+
+
+Content Length: 0
+ ### Write ID: 242
+ ### Write ID: 151
+ ### Write ID: 256
+ ### Start to write perpared Ops with write ID: 0
+[34m[1mStart to do pipelining!
+[0m[34m[1mDoPipelinedWrite!
+[0m[34m[1mThere are 1 ops to be done!
+[0m[34m[1mStart to push data to server!
+[0mwrite-prepare: chunkid=20 version=8 offset=79 numBytes=79 location= 10.61.1.92 10629 writeId=242  location= 10.61.1.92 10628 writeId=151  location= 10.61.1.92 10626 writeId=256 
+WRITE_PREPARE 
+Cseq: 15
+Version: KFS/1.0
+Chunk-handle: 20
+Chunk-version: 8
+Offset: 79
+Num-bytes: 79
+Checksum: 2249202693
+Num-servers: 3
+Servers:10.61.1.92 10629 242 10.61.1.92 10628 151 10.61.1.92 10626 256 
+
+
+Content Length: 79
+WRITE_SYNC 
+Cseq: 16
+Version: KFS/1.0
+Chunk-handle: 20
+Chunk-version: 8
+Num-servers: 3
+Servers:10.61.1.92 10629 242 10.61.1.92 10628 151 10.61.1.92 10626 256 
+
+
+Content Length: 0
+ ### Doing pipelined write: -1001
+[34m[1mStart to do recycle Prepared Ops!
+[0mOps with no.0 failed: -1001
+Num of bytes wrote: -1001
+LOOKUP 
+Cseq: 0
+Version: KFS/1.0
+Parent File-handle: 2
+Filename: home
+
+
+Content Length: 0
+LOOKUP 
+Cseq: 1
+Version: KFS/1.0
+Parent File-handle: 4
+Filename: fify
+
+
+Content Length: 0
+LOOKUP 
+Cseq: 2
+Version: KFS/1.0
+Parent File-handle: 5
+Filename: test2.txt
+
+
+Content Length: 0
+File already exist, opening: /home/fify/test2.txt
+LOOKUP 
+Cseq: 3
+Version: KFS/1.0
+Parent File-handle: 5
+Filename: test2.txt
+
+
+Content Length: 0
+GETLAYOUT 
+Cseq: 4
+Version: KFS/1.0
+File-handle: 23
+
+
+Content Length: 0
+SIZE 
+Cseq: 5
+Version: KFS/1.0
+Chunk-handle: 20
+Chunk-version: 8
+
+
+Content Length: 0
+TRUNCATE 
+Cseq: 6
+Version: KFS/1.0
+File-handle: 23
+Offset: 0
+
+
+Content Length: 0
+[31m[1mWriting file..[0m
+ALLOCATE 
+Cseq: 7
+Version: KFS/1.0
+Client-host: fify-desktop
+File-handle: 23
+Chunk-offset: 0
+
+
+Content Length: 0
+SIZE 
+Cseq: 8
+Version: KFS/1.0
+Chunk-handle: 20
+Chunk-version: 8
+
+
+Content Length: 0
+WRITE_ID_ALLOC 
+Cseq: 9
+Version: KFS/1.0
+Chunk-handle: 20
+Chunk-version: 8
+Offset: 0
+Num-bytes: 79
+Num-servers: 3
+Servers:10.61.1.92 10629 10.61.1.92 10628 10.61.1.92 10626 
+
+
+Content Length: 0
+ ### Write ID: 243
+ ### Write ID: 152
+ ### Write ID: 257
+ ### Start to write perpared Ops with write ID: 0
+[34m[1mStart to do pipelining!
+[0m[34m[1mDoPipelinedWrite!
+[0m[34m[1mThere are 1 ops to be done!
+[0m[34m[1mStart to push data to server!
+[0mwrite-prepare: chunkid=20 version=8 offset=0 numBytes=79 location= 10.61.1.92 10629 writeId=243  location= 10.61.1.92 10628 writeId=152  location= 10.61.1.92 10626 writeId=257 
+WRITE_PREPARE 
+Cseq: 10
+Version: KFS/1.0
+Chunk-handle: 20
+Chunk-version: 8
+Offset: 0
+Num-bytes: 79
+Checksum: 2248678404
+Num-servers: 3
+Servers:10.61.1.92 10629 243 10.61.1.92 10628 152 10.61.1.92 10626 257 
+
+
+Content Length: 79
+WRITE_SYNC 
+Cseq: 11
+Version: KFS/1.0
+Chunk-handle: 20
+Chunk-version: 8
+Num-servers: 3
+Servers:10.61.1.92 10629 243 10.61.1.92 10628 152 10.61.1.92 10626 257 
+
+
+Content Length: 0
+ ### Doing pipelined write: 0
+[34m[1mStart to do recycle Prepared Ops!
+[0mNum of bytes wrote: 79
+[33m[1mWrite file done, 79 bytes written.[0m
+[31m[1mReading file..[0m
+LEASE_ACQUIRE 
+Cseq: 12
+Version: KFS/1.0
+Chunk-handle: 20
+
+
+Content Length: 0
+READ 
+Cseq: 13
+Version: KFS/1.0
+Chunk-handle: 20
+Chunk-version: 8
+Offset: 0
+Num-bytes: 79
+
+
+Content Length: 0
+Writing file to kfs from test program: KfsWriteAfterRead
+Write for the 1 time.
+
+[33m[1mRead file done, 79 bytes read.[0m
+[31m[1mWriting file..[0m
+WRITE_ID_ALLOC 
+Cseq: 14
+Version: KFS/1.0
+Chunk-handle: 20
+Chunk-version: 8
+Offset: 79
+Num-bytes: 79
+Num-servers: 3
+Servers:10.61.1.92 10629 10.61.1.92 10628 10.61.1.92 10626 
+
+
+Content Length: 0
+ ### Write ID: 244
+ ### Write ID: 153
+ ### Write ID: 258
+ ### Start to write perpared Ops with write ID: 0
+[34m[1mStart to do pipelining!
+[0m[34m[1mDoPipelinedWrite!
+[0m[34m[1mThere are 1 ops to be done!
+[0m[34m[1mStart to push data to server!
+[0mwrite-prepare: chunkid=20 version=8 offset=79 numBytes=79 location= 10.61.1.92 10629 writeId=244  location= 10.61.1.92 10628 writeId=153  location= 10.61.1.92 10626 writeId=258 
+WRITE_PREPARE 
+Cseq: 15
+Version: KFS/1.0
+Chunk-handle: 20
+Chunk-version: 8
+Offset: 79
+Num-bytes: 79
+Checksum: 2249202693
+Num-servers: 3
+Servers:10.61.1.92 10629 244 10.61.1.92 10628 153 10.61.1.92 10626 258 
+
+
+Content Length: 79
+WRITE_SYNC 
+Cseq: 16
+Version: KFS/1.0
+Chunk-handle: 20
+Chunk-version: 8
+Num-servers: 3
+Servers:10.61.1.92 10629 244 10.61.1.92 10628 153 10.61.1.92 10626 258 
+
+
+Content Length: 0
+ ### Doing pipelined write: -1001
+[34m[1mStart to do recycle Prepared Ops!
+[0mOps with no.0 failed: -1001
+Num of bytes wrote: -1001
+LOOKUP 
+Cseq: 0
+Version: KFS/1.0
+Parent File-handle: 2
+Filename: home
+
+
+Content Length: 0
+LOOKUP 
+Cseq: 1
+Version: KFS/1.0
+Parent File-handle: 4
+Filename: fify
+
+
+Content Length: 0
+LOOKUP 
+Cseq: 2
+Version: KFS/1.0
+Parent File-handle: 5
+Filename: test2.txt
+
+
+Content Length: 0
+File already exist, opening: /home/fify/test2.txt
+LOOKUP 
+Cseq: 3
+Version: KFS/1.0
+Parent File-handle: 5
+Filename: test2.txt
+
+
+Content Length: 0
+GETLAYOUT 
+Cseq: 4
+Version: KFS/1.0
+File-handle: 23
+
+
+Content Length: 0
+SIZE 
+Cseq: 5
+Version: KFS/1.0
+Chunk-handle: 20
+Chunk-version: 8
+
+
+Content Length: 0
+TRUNCATE 
+Cseq: 6
+Version: KFS/1.0
+File-handle: 23
+Offset: 0
+
+
+Content Length: 0
+[31m[1mWriting file..[0m
+ALLOCATE 
+Cseq: 7
+Version: KFS/1.0
+Client-host: fify-desktop
+File-handle: 23
+Chunk-offset: 0
+
+
+Content Length: 0
+SIZE 
+Cseq: 8
+Version: KFS/1.0
+Chunk-handle: 20
+Chunk-version: 9
+
+
+Content Length: 0
+WRITE_ID_ALLOC 
+Cseq: 9
+Version: KFS/1.0
+Chunk-handle: 20
+Chunk-version: 9
+Offset: 0
+Num-bytes: 79
+Num-servers: 3
+Servers:10.61.1.92 10629 10.61.1.92 10628 10.61.1.92 10626 
+
+
+Content Length: 0
+ ### Write ID: 245
+ ### Write ID: 154
+ ### Write ID: 259
+ ### Start to write perpared Ops with write ID: 0
+[34m[1mStart to do pipelining!
+[0m[34m[1mDoPipelinedWrite!
+[0m[34m[1mThere are 1 ops to be done!
+[0m[34m[1mStart to push data to server!
+[0mwrite-prepare: chunkid=20 version=9 offset=0 numBytes=79 location= 10.61.1.92 10629 writeId=245  location= 10.61.1.92 10628 writeId=154  location= 10.61.1.92 10626 writeId=259 
+[1mDoOpSend from PushData->masterSock
+[0mWRITE_PREPARE 
+Cseq: 10
+Version: KFS/1.0
+Chunk-handle: 20
+Chunk-version: 9
+Offset: 0
+Num-bytes: 79
+Checksum: 2248678404
+Num-servers: 3
+Servers:10.61.1.92 10629 245 10.61.1.92 10628 154 10.61.1.92 10626 259 
+
+
+Content Length: 79
+WRITE_SYNC 
+Cseq: 11
+Version: KFS/1.0
+Chunk-handle: 20
+Chunk-version: 9
+Num-servers: 3
+Servers:10.61.1.92 10629 245 10.61.1.92 10628 154 10.61.1.92 10626 259 
+
+
+Content Length: 0
+ ### Doing pipelined write: 0
+[34m[1mStart to do recycle Prepared Ops!
+[0mNum of bytes wrote: 79
+[33m[1mWrite file done, 79 bytes written.[0m
+[31m[1mReading file..[0m
+LEASE_ACQUIRE 
+Cseq: 12
+Version: KFS/1.0
+Chunk-handle: 20
+
+
+Content Length: 0
+READ 
+Cseq: 13
+Version: KFS/1.0
+Chunk-handle: 20
+Chunk-version: 9
+Offset: 0
+Num-bytes: 79
+
+
+Content Length: 0
+Writing file to kfs from test program: KfsWriteAfterRead
+Write for the 1 time.
+
+[33m[1mRead file done, 79 bytes read.[0m
+[31m[1mWriting file..[0m
+WRITE_ID_ALLOC 
+Cseq: 14
+Version: KFS/1.0
+Chunk-handle: 20
+Chunk-version: 9
+Offset: 79
+Num-bytes: 79
+Num-servers: 3
+Servers:10.61.1.92 10629 10.61.1.92 10628 10.61.1.92 10626 
+
+
+Content Length: 0
+ ### Write ID: 246
+ ### Write ID: 155
+ ### Write ID: 260
+ ### Start to write perpared Ops with write ID: 0
+[34m[1mStart to do pipelining!
+[0m[34m[1mDoPipelinedWrite!
+[0m[34m[1mThere are 1 ops to be done!
+[0m[34m[1mStart to push data to server!
+[0mwrite-prepare: chunkid=20 version=9 offset=79 numBytes=79 location= 10.61.1.92 10629 writeId=246  location= 10.61.1.92 10628 writeId=155  location= 10.61.1.92 10626 writeId=260 
+[1mDoOpSend from PushData->masterSock
+[0mWRITE_PREPARE 
+Cseq: 15
+Version: KFS/1.0
+Chunk-handle: 20
+Chunk-version: 9
+Offset: 79
+Num-bytes: 79
+Checksum: 2249202693
+Num-servers: 3
+Servers:10.61.1.92 10629 246 10.61.1.92 10628 155 10.61.1.92 10626 260 
+
+
+Content Length: 79
+WRITE_SYNC 
+Cseq: 16
+Version: KFS/1.0
+Chunk-handle: 20
+Chunk-version: 9
+Num-servers: 3
+Servers:10.61.1.92 10629 246 10.61.1.92 10628 155 10.61.1.92 10626 260 
+
+
+Content Length: 0
+ ### Doing pipelined write: -1001
+[34m[1mStart to do recycle Prepared Ops!
+[0mOps with no.0 failed: -1001
+Num of bytes wrote: -1001

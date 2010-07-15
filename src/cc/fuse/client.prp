@@ -1,0 +1,9 @@
+# for the fuse startup.
+# Created by Fify, 15 Apr, 2009.
+
+# Hostname of the meta server.
+metaServer.name = localhost
+
+# Port that the meta server opens to the clients.
+metaServer.port = 10625
+
